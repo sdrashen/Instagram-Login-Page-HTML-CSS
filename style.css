@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-box: box-sizing;
+    text-decoration: none;
+}
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#container-1 {
+    border: 2px solid red;
+}
+
+#container-2 {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    width: 40%;
+    height: auto;
+}
+
+.word-instagram {
+    width: 10.950rem;
+    height: 3.50rem;
+    display: block;
+    margin: 0 auto;
+}
+
+#form {
+    border: 2px solid brown;
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem;
+}
+
+input {
+    background-color: #EEEEEE;
+}
+
+input,
+button {
+    padding: 5%;
+    border: none;
+    margin: 0.5rem 0;
+}
+
+.btn-login {
+    color: #FFFFFF;
+    background-color: lightblue;
+}
+
+#sign-up {
+    border: 2px solid green;
+}
