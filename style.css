@@ -1,8 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-    border-box: box-sizing;
+    box-sizing: border-box;
     text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F3F3F3;
 }
 
 #wrapper {
@@ -16,45 +25,77 @@
     border: 2px solid red;
 }
 
-#container-2 {
-    border: 2px solid blue;
+#container-input {
     display: flex;
     flex-direction: column;
-    align-items: space-between;
-    width: 40%;
-    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    background: #FFF;
+    border: 1px solid #D3D3D3;
+    border-radius: 1px;
+    width: 350px;
+    margin-bottom: 10px;
 }
 
 .word-instagram {
-    width: 10.950rem;
-    height: 3.50rem;
+    width: 200px;
     display: block;
     margin: 0 auto;
 }
 
 #form {
-    border: 2px solid brown;
     display: flex;
     flex-direction: column;
-    padding: 1.3rem;
+    padding: 1.5rem;
 }
 
 input {
-    background-color: #EEEEEE;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    text-align: start;
+    padding: 11px 0 9px 10px;
+}
+
+
+/* input::placeholder - Selects input elements with the "placeholder" attribute specified*/
+
+input::placeholder {
+    font-size: 14px;
+    color: #8E8E8E;
 }
 
 input,
 button {
-    padding: 5%;
-    border: none;
     margin: 0.5rem 0;
 }
 
 .btn-login {
+    border: none;
+    border-radius: 4px;
     color: #FFFFFF;
     background-color: lightblue;
+    font-weight: 500;
+    padding: 7px 11px;
+    margin-top: 12px;
 }
 
-#sign-up {
-    border: 2px solid green;
+.facebook-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.entrar-com-facebook {
+    color: #385185;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.forgot-password {
+    color: #385185;
+    font-size: 12px;
+    text-align: center;
 }
