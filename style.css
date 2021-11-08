@@ -11,7 +11,7 @@ body {
     justify-content: center;
     width: 100%;
     min-height: 100vh;
-    background-color: #F3F3F3;
+    background-color: #FAFAFA;
 }
 
 #wrapper {
@@ -31,27 +31,25 @@ body {
     align-items: center;
 }
 
-#form {
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem;
+    padding: 10px;
+    width: 22rem;
 }
-
-.input-forms {}
 
 .form-group {
     background: #FFF;
     border: 1px solid #D3D3D3;
     border-radius: 1px;
-    width: 360px;
     margin-bottom: 10px;
 }
 
 .word-instagram {
-    width: 200px;
+    width: 195px;
     display: block;
-    margin: 0 auto;
+    margin: auto;
 }
 
 input {
@@ -61,6 +59,10 @@ input {
     border-radius: 3px;
     text-align: start;
     padding: 11px 0 9px 10px;
+}
+
+.input-user-data {
+    margin: 3px;
 }
 
 
@@ -82,11 +84,30 @@ button {
     color: #FFFFFF;
     background-color: lightblue;
     font-weight: 500;
-    padding: 7px 11px;
-    margin-top: 12px;
     width: 268px;
     height: 30px;
+}
+
+.separator {
+    display: flex;
     align-items: center;
+    margin: 4rem 0;
+}
+
+.separator div:nth-child(2) {
+    color: #8E8E8E;
+    font-weight: 400;
+    padding: 0 1.35rem;
+    line-height: 0;
+}
+
+.separator div:nth-child(1),
+.separator div:nth-child(3) {
+    background-size: auto;
+    border: solid 2px #8E8E8E;
+    width: 100%;
+    height: 5px;
+    /* margin: 10px 40px 18px; */
 }
 
 #facebook-login-option {
@@ -126,6 +147,7 @@ button {
 }
 
 #footer {
+    font-size: 14px;
     text-align: center;
 }
 
