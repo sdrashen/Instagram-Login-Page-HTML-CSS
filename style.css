@@ -29,12 +29,23 @@ body {
 }
 
 .phones-background {
+    display: flex;
+    justify-content: space-between;
     width: 454px;
     height: 618px;
-    background: url("../img/instagram-celular.png");
+    background: url("./images/instagram-cellphones.png");
     background-size: 454px 618px;
     background-position: 0 0;
     margin-right: -30px;
+}
+
+.phone-slider {
+    margin: 99px 0 0 151px;
+    width: 240px;
+    height: 427px;
+    background: url("./images/instagram-celular-1.jpeg");
+    background-size: 100% 100%;
+    animation: slide 25s infinite;
 }
 
 .form {
@@ -172,12 +183,8 @@ button {
     margin-top: 15px;
 }
 
-.appstore-icon {
-    width: 150px;
-    height: 60px;
-}
-
+.appstore-icon,
 .google-play-icon {
     width: 130px;
-    height: 41px;
+    height: 40px;
 }
