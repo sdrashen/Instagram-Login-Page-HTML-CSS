@@ -8,7 +8,7 @@
 
 body {
     display: flex;
-    justify-content: center;
+    align-items: center;
     width: 100%;
     min-height: 100vh;
     background-color: #FAFAFA;
@@ -19,13 +19,14 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    gap: 3px;
 }
 
 #phones-ilustrations {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 35%;
 }
 
 .phones-background {
@@ -35,17 +36,40 @@ body {
     height: 618px;
     background: url("./images/instagram-cellphones.png");
     background-size: 454px 618px;
-    background-position: 0 0;
     margin-right: -30px;
 }
 
 .phone-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-slider {
     margin: 99px 0 0 151px;
     width: 240px;
     height: 427px;
-    background: url("./images/instagram-celular-1.jpeg");
-    background-size: 100% 100%;
-    animation: slide 25s infinite;
+    animation: slide 5s infinite;
+}
+
+.image-slider:nth-child(1) {
+    animation-delay: 5s;
+}
+
+.image-slider:nth-child(2) {
+    animation-delay: 10s;
+}
+
+.image-slider:nth-child(3) {
+    animation-delay: 15s;
+}
+
+@keyframes slide {
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
 .form {
@@ -60,17 +84,18 @@ body {
     background: #FFF;
     border: 1px solid #D3D3D3;
     border-radius: 1px;
+    padding-top: 15px;
     margin-bottom: 10px;
 }
 
 .word-instagram {
-    width: 195px;
+    width: 180px;
     display: block;
-    margin: auto;
+    margin: 15px auto 20px auto;
 }
 
 input {
-    width: 268px;
+    width: 265px;
     background-color: #FAFAFA;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
@@ -86,23 +111,23 @@ input {
 /* input::placeholder - Selects input elements with the "placeholder" attribute specified*/
 
 input::placeholder {
-    font-size: 14px;
+    font-size: 12px;
     color: #8E8E8E;
 }
 
 input,
 button {
-    margin: 0.5rem 0;
+    margin: 0.3rem 0;
 }
 
 #btn-login {
     border: none;
     border-radius: 4px;
     color: #FFFFFF;
-    background-color: rgba(115, 199, 248, 0.877);
+    background-color: #B2DFFC;
     font-weight: 500;
     font-size: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 268px;
     height: 30px;
 }
@@ -149,15 +174,11 @@ button {
     text-align: center;
 }
 
-.sign-up-items {
-    height: 54px;
-    display: flex;
-    align-items: center;
-}
-
 .sign-up {
+    height: 30px;
+    font-size: 14px;
     text-align: center;
-    margin: 0 auto;
+    margin: 10px;
 }
 
 .sign-up-btn {
@@ -168,12 +189,12 @@ button {
 #footer {
     font-size: 14px;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 #footer p {
     color: #262626;
-    font-size: 15px;
+    height: 18px;
 }
 
 .get-the-app-icons {
@@ -187,4 +208,8 @@ button {
 .google-play-icon {
     width: 130px;
     height: 40px;
+}
+
+.appstore-icon {
+    padding-right: 8px;
 }
